@@ -255,12 +255,9 @@ def WarriorScene1():
 
 
 
-
-
 scene1()
 print("\n\n")
 print("=================================END OF CHAPTER 1=================================")
-
 
 
 CharacterScene1()
