@@ -210,7 +210,7 @@ def CharacterScene1():
             fly pass your face. 
             """)
             time.sleep(2.5)
-            print("""\n "One more step friend and you'll find the next arrow 
+            print("""\n"One more step friend and you'll find the next arrow 
             in your crown." You relayed your information about meeting 
             Ricter to this mysterious man. "Oh, sorry about that then. Come 
             help me with finding this singular that was roaming around 
@@ -312,7 +312,62 @@ def CharacterScene2(Class_value):
                 CharacterScene2("Warrior")
     elif Class_value == "Mage":
         time.sleep(2)
-        print("This works for Mage")
+        print("""\nYou are currently deep within a deep nordic ruins trying
+        to find something called the "Arkenstone". It is said that the stone
+        is filled with magic and energy that can catapult the world into 
+        the next age. You decided to go alone on this journey, knowing
+        you are very capable within your own experstise with magic.
+        But you are at a crossroads deep within the cavern. Ahead of you
+        is a small light about a mile deep, but there is a dark chamber that
+        leads to your right, which you have no understanding where that
+        leads too.
+
+        Do you head North towards the light, or East into the dark?
+        (Type North or East)
+        """)
+        time.sleep(2.5)
+        c1 = input()
+        ans = 'incorrect'
+        while ans == 'incorrect':
+            if c1.upper() == "EAST":
+                time.sleep(2.5)
+                print("""\nHeading down the East path, you are meet, with 
+                damp mildew that reaches your nose. But after walking down
+                this path for what seemed to be multiple hours, you are 
+                approached with a silver lake, with the faintest hint of
+                moonlight hitting it.
+
+                There is a mound of land within the middle of this lake.
+                And there rest a singular flower, that illuminates the chamber
+                within.
+
+                You beggin approaching the flower, and start to swim over. Once there
+                the flower begings to enchant you. And you pluck it. But then bellows of
+                roars fill the chamber. And a dragon, green reptilic skin meets your eyes.
+                """)
+            ans = 'correct'
+            time.sleep(2.5)
+            print("=====================END OF CHAPTER 2=====================")
+            time.sleep(2.5)
+            MageScene()
+            if c1.upper() == "NORTH":
+                time.sleep(2.5)
+                print("""\nYou head towards the light, and see that it was a campfire.
+                You begin to search around, and find out that there was someone here
+                not long ago. As you begin to put the pieces together. You feel a blade
+                on your neck a voice falls onto your ears, "So your thinking, why does
+                this have to happen to me. Well wrong place wrong time buddy, cant trust
+                a soul, even you. Goodbye".
+
+                You feel a sharp pain and then a dark voids fall beneath you.
+                """)
+                ans = 'correct'
+                time.sleep(2)
+                print("====================YOU HAVE DIED====================")
+                time.sleep(2)
+                print(" ==================RESTARTING======================")
+                time.sleep(2)
+                CharacterScene2("Mage")
     elif Class_value == "Ranger":
         time.sleep(2)
         print("This works for Ranger")
@@ -441,7 +496,7 @@ def WarriorScene():
             print("""\nYears pass, and you have been labeled the hero of the 
             realm. Your deeds have landed you your own castle, and have 
             started your own mercenary company. You and Gorthag continue to 
-            go onto adventures with each other. You have saved the day
+            go onto adventures with each other. You have saved the day.
             """)
             ans = 'correct'
             time.sleep(2.5)
@@ -460,10 +515,132 @@ def WarriorScene():
             c1 = input()
 
 
+def MageScene():
+    time.sleep(2.5)
+    print("""\nThe Dragon looks down upon you, it chest bellowed up.
+    "I AM ALAZATHOR, THE BREAKER OF CHAINS AND REDEMER OF HUMANITY.
+    You have stumbled upon this chamber, what does thou seek?
+    Answer with honest truth, for if you refuse, I will meet
+    you with justice that I deemed worthy. Answer Mortal!"
+
+    Do you Answer or Refuse?
+    """)
+    c1 = input()
+    time.sleep(2.5)
+    ans = 'incorrect'
+    while ans == 'incorrect':
+        if c1.upper() == "ANSWER":
+            time.sleep(2.5)
+            print("""\n"Ahh, looking for the Arkenstone, a mighty artifact.
+            Only once has it been weilded by a mortal like yourself. An old
+            dwarf king, he became made with power, and the source of his corruption
+            was the stone its self. My internal question, will you be able to strike
+            off this corruption. I have but one other question that you need to answer.
+            For if one were to answer this right, they will achive the stone and bring
+            greatness to this world. If one were to answer wrong, the stone they will recieve.
+            But they will spread a great darkness around this world. A herald of pure chaos
+            and death." 
+            """)
+            time.sleep(2.5)
+            print("""\n"So now the Question. A long time ago, a farmer worked hard to maitain
+            a peacful life for his family. He wasnt rich, but that didnt matter to him. He had
+            love and was loved by those around him. But a king, made with power wanted his land. 
+            It would be benefical for him, so he sent his army and murdered the family. The Farmer
+            was out that night. He went to harvest some herbs. He found his dead family, and was broken
+            will grief and rage."
+
+            "He spent the next years plotting his vengence, and amassed a mighty group of heros
+            and warriors that would fight for him. The farmer slew the king, and took his throne."
+
+            "My question to you, was what he did the right course of action?"
+
+            Answer his question, Yes or No: 
+            """)
+            c1 = input()
+            time.sleep(2.5)
+            ans = 'incorrect'
+            while ans == 'incorrect':
+                if c1.upper() == "YES":
+                    print("""\n"Ah, you truly understand the world. That ever action has
+                    a consequence. That no matter how lowely or mighty one is, that they will
+                    meet their fate with the force of justice. You have proved yourself to wield
+                    this stone with the might of a king. You will sheperd this world in its new age.
+                    Take flight and remeber that you are a champion of Justice."
+
+                    Alazathor raises it right claw, and manifest this glowing ehteral stone, of blue and purple stars.
+                    He hands it to you, and with a bright flash, he dissapears. But the stone speaks to you.
+                    And your able to learn all of its secrets.
+                    """)
+                    time.sleep(2.5)
+                    print("""\nYears pass, and you have launched the world to the next age. You have become
+                    supreme emperor of the lands, and have ammased countless citadels to promote peace and tranquility.
+                    Everyone is happy, and you have made the world a better place.
+                    """)
+                    ans = 'correct'
+                    time.sleep(2.5)
+                    print("=============YOU GOT THE GOOD ENDING==============")
+                    time.sleep(2.5)
+                    print("=============THANK YOU FOR PLAYING===============")
+                    time.sleep(2.5)
+                    print("===========RESTARTING FROM THE START=============")
+                    time.sleep(2.5)
+                    scene1()
+                if c1.upper() == "NO":
+                    print("""\n"That saddens me. My your reign be ever short, and thou people be ever viligent."
+
+                    Alazathor raises it right claw, and manifest this glowing ehteral stone, of blue and purple stars.
+                    He hands it to you, and with a bright flash, he dissapears. But the stone speaks to you.
+                    And your able to learn all of its secrets. 
+                    """)
+                    time.sleep(2.5)
+                    print("""\nYears passed, and you have become the supreme tyrant of the lands. You have bent the knee, of
+                    anyone who has resisted your rule. becoming mad with power, those who were closet with you, have turned.
+                    Branding them traitors they fought against you. And in the end, you were the one who succumbed.
+                    """)
+                    ans = 'correct'
+                    time.sleep(2.5)
+                    print("========YOU GOT THE BAD ENDING========")
+                    time.sleep(2.5)
+                    print("========THANK YOU FOR PLAYING=========")
+                    time.sleep(2.5)
+                    print("======RESTARTING FROM THE START=======")
+                    time.sleep(2.5)
+                    scene1()
+        elif c1.upper() == 'REFUSE':
+            time.sleep(2.5)
+            print("""\n"Interesting, I have not found a mortal to have gone against my will.
+            Justice is a fickled thing, I have long been her champion for many milenia. You are
+            free from her shackles i sense. I will make you my champion, and together we will free
+            this world from Justice's prison.
+            """)
+            time.sleep(2.5)
+            print("""\nAlazathor raises it right claw, and manifest this glowing ehteral stone, of blue and purple stars.
+            He hands it to you, and with a bright flash. The stone speaks to you.And your able to learn all of its secrets.
+            Alazathor takes you into his wing, and the two of you, use the power of the Arkenstone for the good of all humanity.
+
+            You have become a demigod, serving the champion of Justice. With your powers you oversee the world, and step in
+            when needed. You become hope for children and many men alike. Your name is whispered in the streets, as their silent savior.
+            You have becomed legend, and your stories will never die.
+            """)
+            ans = 'correct'
+            time.sleep(2.5)
+            print(
+                "==================YOU GOT THE GOOD ENDING==================")
+            time.sleep(2.5)
+            print(
+                "====================THANK YOU FOR PLAYING===================")
+            time.sleep(2.5)
+            print(
+                "==================RESTARTING FROM THE START=================")
+            time.sleep(2.5)
+            scene1()
+        else:
+            print("Wrong Input! Enter Answer or Refuse: ")
+            c1 = input()
+
+
 scene1()
 print("\n\n")
 print("=========================END OF CHAPTER 1=========================")
 
 CharacterScene1()
-print("\n\n")
-print("=========================END OF CHAPTER 2=========================")
