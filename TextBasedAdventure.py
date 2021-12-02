@@ -228,7 +228,7 @@ def CharacterScene1():
             ans = 'correct'
             Class = "Ranger"
         else:
-            print("ENTER THE RIGHT CHOICE! Stay or Leave? ")
+            print("INCORRECT! Type your choice: Warrior, Mage, or Ranger? ")
             c1 = input()
     time.sleep(2.5)
     CharacterScene2(Class)
@@ -283,7 +283,7 @@ def CharacterScene2(Class_value):
             time.sleep(2.5)
             print("=====================END OF CHAPTER 2=====================")
             time.sleep(2.5)
-            WarriorScene1()
+            WarriorScene()
             if c1.upper() == "NO":
                 time.sleep(2.5)
                 print("""\n "That is a shame. I would leave this place as 
@@ -306,6 +306,7 @@ def CharacterScene2(Class_value):
                 ans = 'correct'
                 time.sleep(2)
                 print("====================YOU HAVE DIED====================")
+                time.sleep(2)
                 print(" ================== RESTARTING ======================")
                 time.sleep(2)
                 CharacterScene2("Warrior")
@@ -317,8 +318,146 @@ def CharacterScene2(Class_value):
         print("This works for Ranger")
 
 
-def WarriorScene1():
-    print("\nYay it works")
+def WarriorScene():
+    time.sleep(2.5)
+    print("""\nFor years, you and Alucard have been traveling the land 
+    fighting the evil forces of Dracula. Recently you have made your way to 
+    his castle, Ravenloft. Conjoined with the forces of Ritcher of Alucard, 
+    you have pushed your way into his chambers. 
+    """)
+    time.sleep(2.5)
+    print("""\nHere you face down the man himself, Dracula. A everlasting 
+    gloom fills the space around you. A calm look from dracula, stares down 
+    upon you. It is only you within his chamber. He shows his hands, daggers 
+    form within his hand. He charges at you. 
+
+    You are equipped with a shield, and the morning star whip.
+
+    Do you attack or block?
+    """)
+    c1 = input()
+    time.sleep(2.5)
+    ans = 'incorrect'
+    while ans == 'incorrect':
+        if c1.upper() == "ATTACK":
+            time.sleep(2.5)
+            print("""\nYou whip the morning star at Dracula. He defects the 
+            attack initially. But you pull down onto the whip allowing it to 
+            strike Dracula within the chest. It seems to be fatal enough of 
+            a blow, and he falls onto one knee. 
+            """)
+            time.sleep(2.5)
+            print("""\nYou approach him, his calm face look up at you. 
+            "Finish your destiny. Along have you awaited this. I have tried 
+            at every corner to stop you, but it seems the mistress of fate 
+            is cruel in her own way. But before you end my life, promise my 
+            that you will tell Alucard of my last words. Tell him 'Your 
+            mother lies east. Atop the ruby mountains.' That is all I have 
+            to say, Good night Fel Slayer. 
+
+            Do you kill or Spare Dracula?
+            """)
+            c1 = input()
+            time.sleep(2.5)
+            ans = 'incorrect'
+            while ans == 'incorrect':
+                if c1.upper() == "KILL":
+                    print("""\nYou reel back the morning star whip and 
+                    attack Dracula, ending him with a final blow. You see 
+                    his body started to disperse into this black mist, 
+                    until Richter rusher up behind you, and using fire magic 
+                    to completely destroy the soul of Dracula. 
+
+                    You two share a glance and he ask you "So, what will you 
+                    do now." 
+                    """)
+                    time.sleep(2.5)
+                    print("""\nYears pass, and you have been labeled the hero 
+                    of the realm. Your deeds have landed you your own 
+                    castle, and have started your own mercenary company. You 
+                    and Gorthag continue to go onto adventures with each 
+                    other. You have saved the day.
+                    """)
+                    ans = 'correct'
+                    time.sleep(2.5)
+                    print("=============YOU GOT THE GOOD ENDING==============")
+                    time.sleep(2.5)
+                    print("=============THANK YOU FOR PLAYING===============")
+                    time.sleep(2.5)
+                    print("===========RESTARTING FROM THE START=============")
+                    time.sleep(2.5)
+                    scene1()
+                if c1.upper() == "SPARE":
+                    print("""\nYou find pity in the man’s last words to you. 
+                    You reel back the morning star, but you slack the line. 
+                    Dracula stares at you. “You are a honorable man, 
+                    but I am one of the dead’s chosen. Killing me would have 
+                    been the right choice. I do take sorrow in what I am 
+                    about to do." 
+
+                    Dracula teleports behind you, and you feel the sharp 
+                    pain of his teeth sink into your neck. You have been 
+                    turned, now an undead servant for lord Dracula. At this 
+                    time, both Alucard and Richter have made their way into 
+                    the chamber of Dracula, and now his forever faithful 
+                    servant. 
+
+                    You are commanded to attack the two and do so without 
+                    hesitation. You slay your old companions, standing over 
+                    their bodies, you are the victor. 
+                    """)
+                    time.sleep(2.5)
+                    print("""\nYears pass, and you have been the chosen 
+                    champion of Lord Dracula. You have lead hordes of evil 
+                    to take over the world. You stand at the top, but below 
+                    your lord. You life is now his, forever commanded to do 
+                    his bidding. 
+                    """)
+                    ans = 'correct'
+                    time.sleep(2.5)
+                    print("========YOU GOT THE BAD ENDING========")
+                    time.sleep(2.5)
+                    print("========THANK YOU FOR PLAYING=========")
+                    time.sleep(2.5)
+                    print("======RESTARTING FROM THE START=======")
+                    time.sleep(2.5)
+                    scene1()
+        elif c1.upper() == 'BLOCK':
+            time.sleep(2.5)
+            print("""\nYou raise your silver crest blocking Dracula Attack. 
+            He reels back in and strikes again. But your defense is strong. 
+            You leverage another block, and have a shot to strike him. You 
+            take the shot and it impales him. At the same time, both Alucard 
+            and Richter flank you. They see you have struct him, and follow 
+            up with you. Alucard uses his heirloom sword, and Richter use 
+            his pyrokinesis. Together the three of you were able to slay and 
+            destroy the soul of Dracula. 
+
+            Alucard looks over at you, "Its over then. No more misery or 
+            bloodshed, we have finally done it. I wish there was more to 
+            help with my friend. But this is were we say our goodbyes.
+            """)
+            time.sleep(2.5)
+            print("""\nYears pass, and you have been labeled the hero of the 
+            realm. Your deeds have landed you your own castle, and have 
+            started your own mercenary company. You and Gorthag continue to 
+            go onto adventures with each other. You have saved the day
+            """)
+            ans = 'correct'
+            time.sleep(2.5)
+            print(
+                "==================YOU GOT THE GOOD ENDING==================")
+            time.sleep(2.5)
+            print(
+                "====================THANK YOU FOR PLAYING===================")
+            time.sleep(2.5)
+            print(
+                "==================RESTARTING FROM THE START=================")
+            time.sleep(2.5)
+            scene1()
+        else:
+            print("Wrong Input! Enter Attack or Block: ")
+            c1 = input()
 
 
 scene1()
