@@ -133,12 +133,14 @@ def scene3(pick_value):
         chasing you, and wants to end you. But I will help you. I believe 
         this will be the start of something great." 
         """)
+    time.sleep(2.5)
+    CharacterScene1()
 
 
 def CharacterScene1():
-    time.sleep(3)
+    time.sleep(2.5)
     print("""\n"Before we begin to work together I must know more about you, 
-    who you are, what your expertises is,stuff like that. Hopefully it wont 
+    who you are, what your expertises is, stuff like that. Hopefully it wont 
     take that long. First I am going to ask you what your Name is. 
     """)
     time.sleep(2.5)
@@ -316,7 +318,7 @@ def CharacterScene2(Class_value):
         to find something called the "Arkenstone". It is said that the stone
         is filled with magic and energy that can catapult the world into 
         the next age. You decided to go alone on this journey, knowing
-        you are very capable within your own experstise with magic.
+        you are very capable within your own expertise with magic.
         But you are at a crossroads deep within the cavern. Ahead of you
         is a small light about a mile deep, but there is a dark chamber that
         leads to your right, which you have no understanding where that
@@ -341,9 +343,10 @@ def CharacterScene2(Class_value):
                 And there rest a singular flower, that illuminates the chamber
                 within.
 
-                You beggin approaching the flower, and start to swim over. Once there
-                the flower begings to enchant you. And you pluck it. But then bellows of
-                roars fill the chamber. And a dragon, green reptilic skin meets your eyes.
+                You begin approaching the flower, and start to swim over. 
+                Once there the flower begins to enchant you. And you pluck 
+                it. But then bellows of roars fill the chamber. And a 
+                dragon, green reptilian skin meets your eyes. 
                 """)
             ans = 'correct'
             time.sleep(2.5)
@@ -352,12 +355,13 @@ def CharacterScene2(Class_value):
             MageScene()
             if c1.upper() == "NORTH":
                 time.sleep(2.5)
-                print("""\nYou head towards the light, and see that it was a campfire.
-                You begin to search around, and find out that there was someone here
-                not long ago. As you begin to put the pieces together. You feel a blade
-                on your neck a voice falls onto your ears, "So your thinking, why does
-                this have to happen to me. Well wrong place wrong time buddy, cant trust
-                a soul, even you. Goodbye".
+                print("""\nYou head towards the light, and see that it was a 
+                campfire. You begin to search around, and find out that 
+                there was someone here not long ago. As you begin to put the 
+                pieces together. You feel a blade on your neck a voice falls 
+                onto your ears, "So your thinking, why does this have to 
+                happen to me. Well wrong place wrong time buddy, cant trust 
+                a soul, even you. Goodbye". 
 
                 You feel a sharp pain and then a dark voids fall beneath you.
                 """)
@@ -370,14 +374,14 @@ def CharacterScene2(Class_value):
                 CharacterScene2("Mage")
     elif Class_value == "Ranger":
         time.sleep(2)
-        print("""\nThe seabreeze hits your nose, and the distance sound of
+        print("""\nThe sea breeze hits your nose, and the distance sound of
         seagulls fall down on your ear. The boat your on begins to rock.
         Used to the sway, you avoid the sickness. You have been traveling
-        with captin Hugo for some time with your friend Ulyesses. As you scan
-        around the top deck you see Ulyesses comes up from behind you.
-        "Hey, captain wants to know if youll stay guard tonight. Joseph,
-        got some scury and wont be able to stand up for some time. It'll
-        mean alot to him."
+        with captain Hugo for some time with your friend Ulysses. As you scan
+        around the top deck you see Ulysses comes up from behind you.
+        "Hey, captain wants to know if you'll stay guard tonight. Joseph,
+        got some scurry and wont be able to stand up for some time. It'll
+        mean a lot to him."
 
         Do you take Joseph Night watch? (Type Yes or No)
         """)
@@ -387,31 +391,39 @@ def CharacterScene2(Class_value):
         while ans == 'incorrect':
             if c1.upper() == "YES":
                 time.sleep(2.5)
-                print("""\n"Thank you. Captain has been very paranoid recently.
-                Talks of mutiny are coming from the Revelry. The plank king is said
-                to want the head of hugo. But hopefully these are rumours. Still
-                you see anything strange tonight, dont hesistate to act upon it."
+                print("""\n"Thank you. Captain has been very paranoid 
+                recently. Talks of mutiny are coming from the Revelry. The 
+                plank king is said to want the head of hugo. But hopefully 
+                these are rumours. Still you see anything strange tonight, 
+                don't hesitate to act upon it." 
 
-                You go ahead and situate yourself to oversee the boat tonight. You
-                are stationed within the Reverly, a "Capital" of sorts. Its a den of thieves
-                and pirates, but it has been home to you and ulyesses for some time.
-                The lord of the reverly, The Plank King; Is a scray individual. He has 
-                shown to have a stern and easy-to-provoke attituted. There has been talks 
-                of a mutiny against your captain, and rumours are the Plank king wants him
-                dead himself.
+                You go ahead and situate yourself to oversee the boat 
+                tonight. You are stationed within the Reverly, a "Capital" 
+                of sorts. Its a den of thieves and pirates, but it has been 
+                home to you and Ulysses for some time. The lord of the 
+                reverly, The Plank King; Is a scary individual. He has shown 
+                to have a stern and easy-to-provoke attitude. There has 
+                been talks of a mutiny against your captain, and rumours are 
+                the Plank king wants him dead himself. 
 
-                As your thoughts are combining in your head. You begin to look around. Closer
-                to midnight, you hear it first before you see it. But a group of 5 cloaked indiviudals
-                have been moving 3 barrles onto the ship deck. Then they light a match, but before they
-                are able to exploded the gunpowder barrels, you shoot their hands in quick retaliation.
+                As your thoughts are combining in your head. You begin to 
+                look around. Closer to midnight, you hear it first before 
+                you see it. But a group of 5 cloaked individuals have been 
+                moving 3 barrels onto the ship deck. Then they light a 
+                match, but before they are able to exploded the gunpowder 
+                barrels, you shoot their hands in quick retaliation. 
 
-                They begin to run away, but not before they start to yell out loud. Lights come down deep from 
-                the reverly. Cannon shots, and a mob of pirates approach. The sound has awoken the crew that
-                you belong too. And ulyesses comes bering bad news, "Assassins killed Captain, tried to stop it.
-                Was too slow. But its true, this is the Plank King's doing. Im not leaving till he is dead."
+                They begin to run away, but not before they start to yell 
+                out loud. Lights come down deep from the reverly. Cannon 
+                shots, and a mob of pirates approach. The sound has awoken 
+                the crew that you belong too. And Ulysses comes bering bad 
+                news, "Assassins killed Captain, tried to stop it. Was too 
+                slow. But its true, this is the Plank King's doing. Im not 
+                leaving till he is dead." 
 
-                Agreeing with your friend, the two of you gather the rest of the crews,
-                and begin to counter the forces of the plank king.
+                Agreeing with your friend, the two of you gather the rest of 
+                the crews, and begin to counter the forces of the plank 
+                king. 
                 """)
             ans = 'correct'
             time.sleep(2.5)
@@ -420,16 +432,19 @@ def CharacterScene2(Class_value):
             RangerScene()
             if c1.upper() == "NO":
                 time.sleep(2.5)
-                print("""\n"Well that is a shame. Ill find someone else. Its getting
-                a little late, why dont you get some rest. Were gonna need you tommorow."
+                print("""\n"Well that is a shame. Ill find someone else. Its 
+                getting a little late, why don't you get some rest. Were 
+                gonna need you tomorrow." 
 
-                You listen to your friends word, and get go and get some rest for the night.
-                Sleep comes easy to you. Its been sometime since you been on the boat, and your 
-                eyes begin to feel very. As your sleep takes you, you see a vision of a bright
-                light. Until minutes later you awaken to the sound of an explosion. And a flaming
-                bar of wood hits you. It ends up pinning you down, unable to move. You see the 
-                water level begin to rise, until it sucummbes you within it. You drift into the
-                void. Until your life leaves your body.
+                You listen to your friends word, and get go and get some 
+                rest for the night. Sleep comes easy to you. Its been 
+                sometime since you been on the boat, and your eyes begin to 
+                feel very. As your sleep takes you, you see a vision of a 
+                bright light. Until minutes later you awaken to the sound of 
+                an explosion. And a flaming bar of wood hits you. It ends up 
+                pinning you down, unable to move. You see the water level 
+                begin to rise, until it succumbs you within it. You drift 
+                into the void. Until your life leaves your body. 
                 """)
                 ans = 'correct'
                 time.sleep(2)
@@ -585,7 +600,7 @@ def WarriorScene():
 def MageScene():
     time.sleep(2.5)
     print("""\nThe Dragon looks down upon you, it chest bellowed up.
-    "I AM ALAZATHOR, THE BREAKER OF CHAINS AND REDEMER OF HUMANITY.
+    "I AM ALAZATHOR, THE BREAKER OF CHAINS AND REDEEMER OF HUMANITY.
     You have stumbled upon this chamber, what does thou seek?
     Answer with honest truth, for if you refuse, I will meet
     you with justice that I deemed worthy. Answer Mortal!"
@@ -598,26 +613,30 @@ def MageScene():
     while ans == 'incorrect':
         if c1.upper() == "ANSWER":
             time.sleep(2.5)
-            print("""\n"Ahh, looking for the Arkenstone, a mighty artifact.
-            Only once has it been weilded by a mortal like yourself. An old
-            dwarf king, he became made with power, and the source of his corruption
-            was the stone its self. My internal question, will you be able to strike
-            off this corruption. I have but one other question that you need to answer.
-            For if one were to answer this right, they will achive the stone and bring
-            greatness to this world. If one were to answer wrong, the stone they will recieve.
-            But they will spread a great darkness around this world. A herald of pure chaos
-            and death." 
+            print("""\n"Ahh, looking for the Arkenstone, a mighty artifact. 
+            Only once has it been wielded by a mortal like yourself. An old 
+            dwarf king, he became made with power, and the source of his 
+            corruption was the stone its self. My internal question, 
+            will you be able to strike off this corruption. I have but one 
+            other question that you need to answer. For if one were to 
+            answer this right, they will achieve the stone and bring 
+            greatness to this world. If one were to answer wrong, the stone 
+            they will receive. But they will spread a great darkness around 
+            this world. A herald of pure chaos and death." 
             """)
             time.sleep(2.5)
-            print("""\n"So now the Question. A long time ago, a farmer worked hard to maitain
-            a peacful life for his family. He wasnt rich, but that didnt matter to him. He had
-            love and was loved by those around him. But a king, made with power wanted his land. 
-            It would be benefical for him, so he sent his army and murdered the family. The Farmer
-            was out that night. He went to harvest some herbs. He found his dead family, and was broken
-            will grief and rage."
+            print("""\n"So now the Question. A long time ago, a farmer 
+            worked hard to maintain a peaceful life for his family. He wasn't 
+            rich, but that didn't matter to him. He had love and was loved by 
+            those around him. But a king, made with power wanted his land. 
+            It would be beneficial for him, so he sent his army and murdered 
+            the family. The Farmer was out that night. He went to harvest 
+            some herbs. He found his dead family, and was broken will grief 
+            and rage." 
 
-            "He spent the next years plotting his vengence, and amassed a mighty group of heros
-            and warriors that would fight for him. The farmer slew the king, and took his throne."
+            "He spent the next years plotting his vengeance, and amassed a 
+            mighty group of heroes and warriors that would fight for him. The 
+            farmer slew the king, and took his throne." 
 
             "My question to you, was what he did the right course of action?"
 
@@ -628,20 +647,26 @@ def MageScene():
             ans = 'incorrect'
             while ans == 'incorrect':
                 if c1.upper() == "YES":
-                    print("""\n"Ah, you truly understand the world. That ever action has
-                    a consequence. That no matter how lowely or mighty one is, that they will
-                    meet their fate with the force of justice. You have proved yourself to wield
-                    this stone with the might of a king. You will sheperd this world in its new age.
-                    Take flight and remeber that you are a champion of Justice."
+                    print("""\n"Ah, you truly understand the world. That 
+                    ever action has a consequence. That no matter how lowly 
+                    or mighty one is, that they will meet their fate with 
+                    the force of justice. You have proved yourself to wield 
+                    this stone with the might of a king. You will shepherd 
+                    this world in its new age. Take flight and remember that 
+                    you are a champion of Justice." 
 
-                    Alazathor raises it right claw, and manifest this glowing ehteral stone, of blue and purple stars.
-                    He hands it to you, and with a bright flash, he dissapears. But the stone speaks to you.
-                    And your able to learn all of its secrets.
+                    Alazathor raises it right claw, and manifest this 
+                    glowing ethereal stone, of blue and purple stars. He 
+                    hands it to you, and with a bright flash, he disappears. 
+                    But the stone speaks to you. And your able to learn all 
+                    of its secrets. 
                     """)
                     time.sleep(2.5)
-                    print("""\nYears pass, and you have launched the world to the next age. You have become
-                    supreme emperor of the lands, and have ammased countless citadels to promote peace and tranquility.
-                    Everyone is happy, and you have made the world a better place.
+                    print("""\nYears pass, and you have launched the world 
+                    to the next age. You have become supreme emperor of the 
+                    lands, and have amassed countless citadels to promote 
+                    peace and tranquility. Everyone is happy, and you have 
+                    made the world a better place. 
                     """)
                     ans = 'correct'
                     time.sleep(2.5)
@@ -653,16 +678,22 @@ def MageScene():
                     time.sleep(2.5)
                     scene1()
                 if c1.upper() == "NO":
-                    print("""\n"That saddens me. My your reign be ever short, and thou people be ever viligent."
+                    print("""\n"That saddens me. My your reign be ever 
+                    short, and thou people be ever vigilant." 
 
-                    Alazathor raises it right claw, and manifest this glowing ehteral stone, of blue and purple stars.
-                    He hands it to you, and with a bright flash, he dissapears. But the stone speaks to you.
-                    And your able to learn all of its secrets. 
+                    Alazathor raises it right claw, and manifest this 
+                    glowing ethereal stone, of blue and purple stars. He 
+                    hands it to you, and with a bright flash, he disappears. 
+                    But the stone speaks to you. And your able to learn all 
+                    of its secrets. 
                     """)
                     time.sleep(2.5)
-                    print("""\nYears passed, and you have become the supreme tyrant of the lands. You have bent the knee, of
-                    anyone who has resisted your rule. becoming mad with power, those who were closet with you, have turned.
-                    Branding them traitors they fought against you. And in the end, you were the one who succumbed.
+                    print("""\nYears passed, and you have become the supreme 
+                    tyrant of the lands. You have bent the knee, of anyone 
+                    who has resisted your rule. becoming mad with power, 
+                    those who were closet with you, have turned. Branding 
+                    them traitors they fought against you. And in the end, 
+                    you were the one who succumbed. 
                     """)
                     ans = 'correct'
                     time.sleep(2.5)
@@ -675,19 +706,25 @@ def MageScene():
                     scene1()
         elif c1.upper() == 'REFUSE':
             time.sleep(2.5)
-            print("""\n"Interesting, I have not found a mortal to have gone against my will.
-            Justice is a fickled thing, I have long been her champion for many milenia. You are
-            free from her shackles i sense. I will make you my champion, and together we will free
-            this world from Justice's prison.
+            print("""\n"Interesting, I have not found a mortal to have gone 
+            against my will. Justice is a fickle thing, I have long been 
+            her champion for many millennia. You are free from her shackles i 
+            sense. I will make you my champion, and together we will free 
+            this world from Justice's prison. 
             """)
             time.sleep(2.5)
-            print("""\nAlazathor raises it right claw, and manifest this glowing ehteral stone, of blue and purple stars.
-            He hands it to you, and with a bright flash. The stone speaks to you.And your able to learn all of its secrets.
-            Alazathor takes you into his wing, and the two of you, use the power of the Arkenstone for the good of all humanity.
+            print("""\nAlazathor raises it right claw, and manifest this 
+            glowing ethereal stone, of blue and purple stars. He hands it to 
+            you, and with a bright flash. The stone speaks to you.And your 
+            able to learn all of its secrets. Alazathor takes you into his 
+            wing, and the two of you, use the power of the Arkenstone for 
+            the good of all humanity. 
 
-            You have become a demigod, serving the champion of Justice. With your powers you oversee the world, and step in
-            when needed. You become hope for children and many men alike. Your name is whispered in the streets, as their silent savior.
-            You have becomed legend, and your stories will never die.
+            You have become a demigod, serving the champion of Justice. With 
+            your powers you oversee the world, and step in when needed. You 
+            become hope for children and many men alike. Your name is 
+            whispered in the streets, as their silent savior. You have 
+            became legend, and your stories will never die. 
             """)
             ans = 'correct'
             time.sleep(2.5)
@@ -708,20 +745,22 @@ def MageScene():
 
 def RangerScene():
     time.sleep(2.5)
-    print("""\nPushing through the streets of the Reverly, your crew, combined with some smart
-    tactics from you and ulyesses, are managing the efforts from the Plank King.
-    Defending your self, you made it to the court room of the Plank King. He is already
-    awaiting you, with his gnarly halberd in hand. 
+    print("""\nPushing through the streets of the Reverly, your crew, 
+    combined with some smart tactics from you and Ulysses, are managing the 
+    efforts from the Plank King. Defending your self, you made it to the 
+    court room of the Plank King. He is already awaiting you, with his 
+    gnarly halberd in hand. 
 
-    "So, Hugo is dead I presume. I know you will not believe me, but Hugo was an evil
-    needed to be destroyed. Was going beneath my nose, and trying to usurpe me. I took 
-    him out. I have regrets, but I did what was needed to be done."
+    "So, Hugo is dead I presume. I know you will not believe me, but Hugo 
+    was an evil needed to be destroyed. Was going beneath my nose, 
+    and trying to usurp me. I took him out. I have regrets, but I did what 
+    was needed to be done." 
 
-    "You have impressed me though, along with your crew. I forgot this, take my offer.
-    Work under me, and Ill let you live, if you dont. Well, you'll wish you did.
-    So what is it? Be smart about this."
+    "You have impressed me though, along with your crew. I forgot this, 
+    take my offer. Work under me, and Ill let you live, if you don't. Well, 
+    you'll wish you did. So what is it? Be smart about this." 
 
-    Ulyesses looks over at you, gives you a nod; without words he lets you know
+    Ulysses looks over at you, gives you a nod; without words he lets you know
     he is on your side with whatever you choose.
 
     So, what will it be? (Type in "Accept" or "Refuse") 
@@ -732,28 +771,49 @@ def RangerScene():
     while ans == 'incorrect':
         if c1.upper() == "REFUSE":
             time.sleep(2.5)
-            print("""\n"Thank you, I havent used old betsy in forever. Your giving me a treat
-            that ill savor for a thousand years." The plank king stand up, and readies his blade.
+            print("""\n"Thank you, I haven't used old betsy in forever. Your 
+            giving me a treat that ill savor for a thousand years." The 
+            plank king stand up, and readies his blade. 
 
-            He begins the attack against you two. It is a ruthless battle, all three of you 
-            suffer wounds from each attacks. But in the end, you and Ulyesses manage, to get
-            the Plank king down onto his kness. He looks up at the two of you.
+            He begins the attack against you two. It is a ruthless battle, 
+            all three of you suffer wounds from each attacks. But in the 
+            end, you and Ulysses manage, to get the Plank king down onto 
+            his knees. He looks up at the two of you. 
 
-            "If you dont, Ill make sure 
+            "If you don't, Ill make sure everything you ever loved, will come 
+            crumbling down." 
 
-            """)
-            time.sleep(2.5)
-            print("""\n
+            Do you kill or spare the plank king? 
             """)
             c1 = input()
             time.sleep(2.5)
             ans = 'incorrect'
             while ans == 'incorrect':
-                if c1.upper() == "":
-                    print("""\n
+                if c1.upper() == "KILL":
+                    print("""\nYou end the Plank Kings life. With the help 
+                    of Ulysses. The two of you together in the chamber 
+                    share glances with each other. Until the rumbling at the 
+                    door breaks through, Its your crew along with the forces 
+                    of the now dead plank king. 
+
+                    Standing there you pick up the makeshift crown the Plank 
+                    king had, and you declare yourself the New King of the 
+                    Reverly. Some backlash comes from those who were aligned 
+                    with the previous ruler. But Ulysses gave them the 
+                    "Encouragement" they needed. 
+
+                    You have become the new king of the Reverly.
                     """)
                     time.sleep(2.5)
-                    print("""\n
+                    print("""\nFor years, you have usurped the rule of the 
+                    previous king. He ruled with chaos and anger. But you 
+                    brought order and peace. People begin to follow you, 
+                    not out of worry or fear; but now out of loyalty. 
+
+                    The Reverly belongs to you, along side Ulysses, the two 
+                    of you have changed the world of criminals, and now made 
+                    it home to those who arent welcomed to their societies. 
+                    You have sowed peace, and given hope to all. 
                     """)
                     ans = 'correct'
                     time.sleep(2.5)
@@ -764,11 +824,30 @@ def RangerScene():
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
                     scene1()
-                if c1.upper() == "":
-                    print("""
+                if c1.upper() == "SPARE":
+                    print("""You find pity in the man who once was king. You 
+                    take his crown. And proclaim yourself the new leader of 
+                    the Reverly. With backings from those around you, 
+                    you rise yourself to the top. People started to believe 
+                    in your leadership. They began to become loyal to you. 
+                    You sentence the old King to imprisonment for the rest 
+                    of his days. And he sat there, for years plotting his 
+                    revenge against you. 
                     """)
                     time.sleep(2.5)
-                    print("""
+                    print("""\nIts been years, but word has it that The 
+                    Plank king has escaped his prison. You worried, begin to 
+                    fortify the Reverly. But The Plank King came back and he 
+                    brought with him the eldritch power, of an ancient evil, 
+                    Uotakoa. With this power, he destroyed everything you 
+                    knew. Ulysses fell last, until it was just you two 
+                    together. 
+
+                    Without hesitation, he ended your life, slowly. He 
+                    allowed you to understand your surrounding, to take in 
+                    the chaos and evil. Then the void takes you. Your eyes 
+                    succumb to black, and nothingness fill everything you 
+                    knew. 
                     """)
                     ans = 'correct'
                     time.sleep(2.5)
@@ -779,31 +858,46 @@ def RangerScene():
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
                     scene1()
-        elif c1.upper() == "":
+        elif c1.upper() == "ACCEPT":
             time.sleep(2.5)
-            print("""\n
+            print("""\n"Well this is a surprise at least. Mighty well 
+            gentlemen, welcome to the crew of the Plank King. First Go and 
+            stop your old mates from wrecking to much havoc. Im in need 
+            urgently of your Assistance." 
+
+            You leave with Ulysses, and stop your crew from continuing their 
+            rampage. Some gave resistance with joining the plank king. But it 
+            didn't take long for the lot of them to get on board. You have 
+            joined the Court of the Sea King, powerful members, who work 
+            directly with the Plank King. 
             """)
             time.sleep(2.5)
-            print("""\n
+            print("""\nYears pass, and you help the Plank King see his 
+            errors in his ways. He begins to shape his ruler ship away from 
+            Chaos, and begins to sow peace and harmony along the pirates and 
+            thieves of the Reverly. 
+
+            While the Plank King worked back at the Reverly, you and Ulysses 
+            have sought out adventure when your desires arise. You own your 
+            own ship, and become the captain of the "Squall Eater". For 
+            years you become infamous, and a mortal enemy to the royal navy 
+            of the empire. You've become legend, who never fails to make a 
+            moment lively. 
             """)
             ans = 'correct'
             time.sleep(2.5)
-            print(
-                "==================YOU GOT THE GOOD ENDING==================")
+            print("=================YOU GOT THE GOOD ENDING=================")
             time.sleep(2.5)
-            print(
-                "====================THANK YOU FOR PLAYING===================")
+            print("==================THANK YOU FOR PLAYING=================")
             time.sleep(2.5)
-            print(
-                "==================RESTARTING FROM THE START=================")
+            print("================RESTARTING FROM THE START===============")
             time.sleep(2.5)
             scene1()
         else:
-            print("Wrong Input! ")
+            print("Wrong Input! Type in Accept or Refuse: ")
             c1 = input()
+
 
 scene1()
 print("\n\n")
 print("=========================END OF CHAPTER 1=========================")
-
-CharacterScene1()
