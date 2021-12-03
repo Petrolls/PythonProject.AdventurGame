@@ -336,7 +336,7 @@ def CharacterScene2(Class_value):
                 time.sleep(2)
                 CharacterScene2("Warrior")
             else:
-                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                print("INCORRECT! Type your choice: Yes or No!")
                 c1 = input()
 
     elif Class_value == "Mage":
@@ -403,7 +403,7 @@ def CharacterScene2(Class_value):
                 time.sleep(2)
                 CharacterScene2("Mage")
             else:
-                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                print("INCORRECT! Type your choice: North or East!")
                 c1 = input()
     elif Class_value == "Ranger":
         time.sleep(2)
@@ -490,7 +490,7 @@ def CharacterScene2(Class_value):
                 time.sleep(2)
                 CharacterScene2("Ranger")
             else:
-                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                print("INCORRECT! Type your choice: Yes or No!")
                 c1 = input()
 
 

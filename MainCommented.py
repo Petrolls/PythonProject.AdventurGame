@@ -1,9 +1,11 @@
-__author = 'Ethan Franklin'
 import time
-#Im importing the time function to use as a way to delay messages.
+__author = 'Ethan Franklin'
+
+
+# Im importing the time function to use as a way to delay messages.
 
 def main():
-#We define the first scene
+    # We define the first scene
     print("""
     Welcome to my adventure game!
     I think we shall start and get into the action.
@@ -17,15 +19,15 @@ def main():
     Type your choice: Stay or Leave?
      """)
     c1 = input()
-    #We assign c1 to our input for our print message above
+    # We assign c1 to our input for our print message above
     time.sleep(2.5)
-    #Time function delaying operation from instantly happening
+    # Time function delaying operation from instantly happening
     ans = 'incorrect'
-    #We set "ans" to incorrect to start the while loop
+    # We set "ans" to incorrect to start the while loop
     while ans == 'incorrect':
-    #while loop starts
+        # while loop starts
         if c1.upper() == "STAY":
-        #If innput is any array of "STAY" it runs the statement
+            # If input is any array of "STAY" it runs the statement
             print("""\n
             You decided to stay in your bed, and let yourself 
             enjoy the rest of the night to yourself. But you awoke to the 
@@ -38,9 +40,10 @@ def main():
             print(" =================== RESTARTING ========================")
             time.sleep(2.5)
             main()
-            #Now we load the first scene again, restarting it from the top, so we dont have to keep re-running the program.
+            # Now we load the first scene again, restarting it from the top,
+            # so we don't have to keep re-running the program.
         elif c1.upper() == "LEAVE":
-        #If innput is any array of "LEAVE" it runs the statement
+            # If input is any array of "LEAVE" it runs the statement
             print("""\n
             You leave the room desiring to rid your self of your 
             hungriness. You approach the bar maiden, and ask her for a plate 
@@ -49,11 +52,12 @@ def main():
             """)
             ans = 'correct'
             scene2()
-            #Now we load scene two, because we had the right choice.
+            # Now we load scene two, because we had the right choice.
         else:
             print("ENTER THE RIGHT CHOICE! Stay or Leave? ")
             c1 = input()
-        #Here it will re run the while loop if anything other then Stay or Leave is typed.
+        # Here it will re run the while loop if anything other then Stay or
+        # Leave is typed.
 
 
 def scene2():
@@ -69,9 +73,9 @@ def scene2():
     """)
     time.sleep(2.5)
     c1 = input()
-    #We assign c1 to our input for our print message above
+    # We assign c1 to our input for our print message above
     ans = 'incorrect'
-    #Start the While Loop
+    # Start the While Loop
     while ans == 'incorrect':
         if c1.upper() == "ANSWER":
             time.sleep(2.5)
@@ -94,7 +98,8 @@ def scene2():
             """)
             ans = 'correct'
             pick = "True"
-            #Here we assign a value which we will call later on the next scene def.
+            # Here we assign a value which we will call later on the next
+            # scene def.
         elif c1.upper() == 'REFUSE':
             time.sleep(2.5)
             print("""\n
@@ -108,14 +113,16 @@ def scene2():
             """)
             ans = 'correct'
             pick = "False"
-            #Here we assign a value which we will call later on the next scene def.
+            # Here we assign a value which we will call later on the next
+            # scene def.
         else:
             print("Wrong Input! Enter pick or ignore?")
             c1 = input()
-        #Here it will re run the while loop if anything other then Stay or Leave is typed.
+        # Here it will re run the while loop if anything other then Stay or
+        # Leave is typed.
     time.sleep(3)
     scene3(pick)
-    #Now we run our scene with the inner function set.
+    # Now we run our scene with the inner function set.
 
 
 def scene3(pick_value):
@@ -128,7 +135,7 @@ def scene3(pick_value):
     """)
     time.sleep(2.5)
     if pick_value == "True":
-    #Here we load the value we assigned in the earlier scene
+        # Here we load the value we assigned in the earlier scene
         time.sleep(2.5)
         print("""\n
         He welcomed you with open arms. He said to you, "I knew 
@@ -150,7 +157,7 @@ def scene3(pick_value):
         will be the start of something great." 
         """)
     elif pick_value == "False":
-    #Here we load the value we assigned in the earlier scene
+        # Here we load the value we assigned in the earlier scene
         print("""\n
         The Bard moved you into his tent. He sat you down, 
         and poured you a cup of tea. He spoke to you, "I am Richter the 
@@ -166,7 +173,7 @@ def scene3(pick_value):
     time.sleep(2.5)
     print("========END OF CHAPTER 1========")
     CharacterScene1()
-    #Now we load the next scene, because we had the right choice.
+    # Now we load the next scene, because we had the right choice.
 
 
 def CharacterScene1():
@@ -195,7 +202,8 @@ def CharacterScene1():
     time.sleep(2.5)
     ans = 'incorrect'
     while ans == 'incorrect':
-    #In this while loop, we are asking for multiple variables, in which we will call onto later
+        # In this while loop, we are asking for multiple variables, in which
+        # we will call onto later
         if c1.upper() == "WARRIOR":
             print("""\n
             "I knew I pegged you as a warrior. Your muscle 
@@ -223,7 +231,7 @@ def CharacterScene1():
             """)
             ans = 'correct'
             Class = "Warrior"
-            #Setting up the Variable
+            # Setting up the Variable
         elif c1.upper() == "MAGE":
             print("""\n
             "Ahh, a mage. I am one myself. For many years I have 
@@ -241,7 +249,7 @@ def CharacterScene1():
             """)
             ans = 'correct'
             Class = "Mage"
-            #Setting up the Variable.
+            # Setting up the Variable.
         elif c1.upper() == "RANGER":
             print("""\n
             "Interesting. I have only ever meet a few rangers in 
@@ -271,14 +279,16 @@ def CharacterScene1():
             """)
             ans = 'correct'
             Class = "Ranger"
-            #Setting up the Variable.
+            # Setting up the Variable.
         else:
             print("INCORRECT! Type your choice: Warrior, Mage, or Ranger? ")
             c1 = input()
-        #Here it will re run the while loop if anything other then Stay or Leave is typed.
+        # Here it will re run the while loop if anything other then Warrior
+        # Mage or Ranger is Typed.
     time.sleep(2.5)
     CharacterScene2(Class)
-    #We load our next def scene with the inner function class, which we just defined.
+    # We load our next def scene with the inner function class, which we
+    # just defined.
 
 
 def CharacterScene2(Class_value):
@@ -289,7 +299,7 @@ def CharacterScene2(Class_value):
     """)
     time.sleep(2.5)
     if Class_value == "Warrior":
-    #Here we load the "Warrior" Class value.
+        # Here we load the "Warrior" Class value.
         time.sleep(2.5)
         print("""\n
         The air of the planes hit your face. Its a chill 
@@ -317,7 +327,7 @@ def CharacterScene2(Class_value):
         c1 = input()
         ans = 'incorrect'
         while ans == 'incorrect':
-        #Now we set up a while loop in side the if loop.
+            # Now we set up a while loop in side the if loop.
             if c1.upper() == "YES":
                 time.sleep(2.5)
                 print("""\n
@@ -336,7 +346,7 @@ def CharacterScene2(Class_value):
                 print("===================END OF CHAPTER 2===================")
                 time.sleep(2.5)
                 WarriorScene()
-                #Now We load the Warrior Scene
+                # Now We load the Warrior Scene
             elif c1.upper() == "NO":
                 time.sleep(2.5)
                 print("""\n
@@ -364,13 +374,14 @@ def CharacterScene2(Class_value):
                 print(" ================== RESTARTING ======================")
                 time.sleep(2)
                 CharacterScene2("Warrior")
-                #Here we load back the same scene back to the warrior value
+                # Here we load back the same scene back to the warrior value
             else:
-                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                print("INCORRECT! Type your choice: Yes or No!")
                 c1 = input()
-            #Here it will re run the while loop if anything other then Stay or Leave is typed
+            # Here it will re run the while loop if anything other then Yes or
+            # No is typed
     elif Class_value == "Mage":
-    #Here we load the "Mage" Class value
+        # Here we load the "Mage" Class value
         time.sleep(2)
         print("""\n
         You are currently deep within a deep nordic ruins trying
@@ -413,7 +424,7 @@ def CharacterScene2(Class_value):
                 print("==================END OF CHAPTER 2==================")
                 time.sleep(2.5)
                 MageScene()
-                #Now we load the Mage scene
+                # Now we load the Mage scene
             elif c1.upper() == "NORTH":
                 time.sleep(2.5)
                 print("""\n
@@ -434,13 +445,14 @@ def CharacterScene2(Class_value):
                 print(" ==================RESTARTING======================")
                 time.sleep(2)
                 CharacterScene2("Mage")
-                #Here we load back the same scene back to the warrior value
+                # Here we load back the same scene back to the warrior value
             else:
-                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                print("INCORRECT! Type your choice: North or East!")
                 c1 = input()
-            #Here it will re run the while loop if anything other then Stay or Leave is typed.
+            # Here it will re run the while loop if anything other then North
+            # or East is typed.
     elif Class_value == "Ranger":
-    #Now we load the Ranger Class value.
+        # Now we load the Ranger Class value.
         time.sleep(2)
         print("""\n
         The sea breeze hits your nose, and the distance sound of
@@ -500,7 +512,7 @@ def CharacterScene2(Class_value):
                 print("==================END OF CHAPTER 2==================")
                 time.sleep(2.5)
                 RangerScene()
-                #We now load the Ranger Scene
+                # We now load the Ranger Scene
             elif c1.upper() == "NO":
                 time.sleep(2.5)
                 print("""\n
@@ -525,11 +537,13 @@ def CharacterScene2(Class_value):
                 print(" ==================RESTARTING======================")
                 time.sleep(2)
                 CharacterScene2("Ranger")
-                #Here we load back the same scene back to the ranger value
+                # Here we load back the same scene back to the ranger value
             else:
-                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                print("INCORRECT! Type your choice: Yes or No!")
                 c1 = input()
-            #Here it will re run the while loop if anything other then Stay or Leave is typed.
+            # Here it will re run the while loop if anything other then Yes or
+            # no is typed.
+
 
 def WarriorScene():
     time.sleep(2.5)
@@ -643,11 +657,13 @@ def WarriorScene():
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
                     main()
-                    #Now we reload the entire code, to allow for easier restarting of the program
+                    # Now we reload the entire code, to allow for easier
+                    # restart of the program
                 else:
                     print("INCORRECT! Type Kill or Spare!")
                     c1 = input()
-                #Here it will re run the while loop if anything other then Stay or Leave is typed
+                # Here it will re run the while loop if anything other then
+                # Kill or Spare is typed
         elif c1.upper() == 'BLOCK':
             time.sleep(2.5)
             print("""\n
@@ -683,11 +699,14 @@ def WarriorScene():
                 "==================RESTARTING FROM THE START=================")
             time.sleep(2.5)
             main()
-            #Now we reload the entire code, to allow for easier restarting of the program
+            # Now we reload the entire code, to allow for easier restart
+            # of the program
         else:
             print("Wrong Input! Enter Attack or Block: ")
             c1 = input()
-        #Here it will re run the while loop if anything other then Stay or Leave is typed.
+        # Here it will re run the while loop if anything other then Attack or
+        # Block is typed.
+
 
 def MageScene():
     time.sleep(2.5)
@@ -774,7 +793,8 @@ def MageScene():
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
                     main()
-                    #Now we reload the entire code, to allow for easier restarting of the program
+                    # Now we reload the entire code, to allow for easier
+                    # restart of the program
                 elif c1.upper() == "NO":
                     print("""\n
                     "That saddens me. My your reign be ever 
@@ -807,7 +827,8 @@ def MageScene():
                 else:
                     print("INCORRECT! Type Yes or No!")
                     c1 = input()
-                #Here it will re run the while loop if anything other then Stay or Leave is typed.
+                # Here it will re run the while loop if anything other then
+                # Yes or No is typed.
         elif c1.upper() == 'REFUSE':
             time.sleep(2.5)
             print("""\n
@@ -847,7 +868,8 @@ def MageScene():
         else:
             print("Wrong Input! Enter Answer or Refuse: ")
             c1 = input()
-        #Here it will re run the while loop if anything other then Stay or Leave is typed.
+        # Here it will re run the while loop if anything other then Answer or
+        # Refuse is typed.
 
 
 def RangerScene():
@@ -971,11 +993,13 @@ def RangerScene():
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
                     main()
-                    #Now we reload the entire code, to allow for easier restarting of the program
+                    # Now we reload the entire code, to allow for easier
+                    # restart of the program
                 else:
                     print("INCORRECT! Type Kill or Spare!")
                     c1 = input()
-                #Here it will re run the while loop if anything other then Stay or Leave is typed.
+                # Here it will re run the while loop if anything other then
+                # Kill or Spare is typed.
         elif c1.upper() == "ACCEPT":
             time.sleep(2.5)
             print("""\n
@@ -1016,7 +1040,9 @@ def RangerScene():
         else:
             print("Wrong Input! Type in Accept or Refuse: ")
             c1 = input()
-        #Here it will re run the while loop if anything other then Stay or Leave is typed.
+        # Here it will re run the while loop if anything other then Accept or
+        # Refuse is typed.
+
 
 main()
-#We run the first scene wich will domino down into the ending.
+# We run the first scene which will domino down into the ending.
