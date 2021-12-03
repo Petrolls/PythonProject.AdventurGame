@@ -2,7 +2,8 @@ import time
 
 
 def scene1():
-    print("""Welcome to my adventure game!
+    print("""
+    Welcome to my adventure game!
     I think we shall start and get into the action.
 
     You awake within a dark and damp tavern, light muffled music fall onto 
@@ -18,7 +19,8 @@ def scene1():
     ans = 'incorrect'
     while ans == 'incorrect':
         if c1.upper() == "STAY":
-            print("""\nYou decided to stay in your bed, and let yourself 
+            print("""\n
+            You decided to stay in your bed, and let yourself 
             enjoy the rest of the night to yourself. But you awoke to the 
             smell of burning fire, and see that all around you is flames. 
             Unable to escape, your perish in the fire. 
@@ -30,10 +32,11 @@ def scene1():
             time.sleep(2.5)
             scene1()
         elif c1.upper() == "LEAVE":
-            print("""You leave the room desiring to rid your self of your 
+            print("""\n
+            You leave the room desiring to rid your self of your 
             hungriness. You approach the bar maiden, and ask her for a plate 
             of bread and soup. You wait until you get your food and begin to 
-            divulge into eating. 
+            divulge into eating.
             """)
             ans = 'correct'
             scene2()
@@ -44,7 +47,8 @@ def scene1():
 
 def scene2():
     time.sleep(2.5)
-    print("""While you were eating you noticed the bard start to look over 
+    print("""\n
+    While you were eating you noticed the bard start to look over 
     at you while he was playing. After he was done, he approached you. He 
     sat down at your table and asked you a question. 'Do you know where the 
     wild ones go?'. Confused you look at him, not answering his question. He 
@@ -58,7 +62,8 @@ def scene2():
     while ans == 'incorrect':
         if c1.upper() == "ANSWER":
             time.sleep(2.5)
-            print("""\nYou answer the bard's question. He starts to laugh, 
+            print("""\n
+            You answer the bard's question. He starts to laugh, 
             and gives you some relief from the tension. He pats you on the 
             back, and says to you "I would leave this place, it smells of 
             burnt and rot. Take the road north. And find me at my camp." The 
@@ -68,7 +73,8 @@ def scene2():
             the road. 
             """)
             time.sleep(2.5)
-            print("""\nAfter walking up the road for some time, you found a 
+            print("""\n
+            After walking up the road for some time, you found a 
             traveling fortune teller. Her name was madam Eva. She gave you a 
             tarot card, and said to keep it on you forever. You were given 
             The Wheel of Fortune card. 
@@ -77,7 +83,8 @@ def scene2():
             pick = "True"
         elif c1.upper() == 'REFUSE':
             time.sleep(2.5)
-            print("""\nThe Bard grew angrier, after the 4th time of asking 
+            print("""\n
+            The Bard grew angrier, after the 4th time of asking 
             his question, he left. You finished eating and went to retire 
             back into your bead. But there was something that was 
             controlling you to move. You began to follow it. It lead you out 
@@ -96,7 +103,8 @@ def scene2():
 
 def scene3(pick_value):
     time.sleep(2.5)
-    print("""\n\nAfter receiving your card, you finally made your way to 
+    print("""\n
+    After receiving your card, you finally made your way to 
     your destination. It was a camp filled with musicians and actors. They 
     were in the middle of dancing and singing, until one of them moved their 
     way towards you. It was the bard from the tavern. 
@@ -104,14 +112,16 @@ def scene3(pick_value):
     time.sleep(2.5)
     if pick_value == "True":
         time.sleep(2.5)
-        print("""\n\nHe welcomed you with open arms. He said to you, "I knew 
+        print("""\n
+        He welcomed you with open arms. He said to you, "I knew 
         you had a sense for adventure and curiosity. I am Ricter the Ivory, 
         a very famous bard throughout these lands. I am also a top student 
         within a mages guild titled the Mithril Academy. I noticed something 
         about you. Something dark and terrible. Here talk with me inside." 
         """)
         time.sleep(2.5)
-        print("""\n\nThe Bard ushered you inside his tent. It was filled 
+        print("""\n
+        The Bard ushered you inside his tent. It was filled 
         with baubles and trinkets around. In the back of the tent was a 
         mural of the bard, atop of a horse. He looked proud and happy to be 
         there. Richter sat down, and pointed for you to take a seat. He 
@@ -122,7 +132,8 @@ def scene3(pick_value):
         will be the start of something great." 
         """)
     elif pick_value == "False":
-        print("""\nThe Bard moved you into his tent. He sat you down, 
+        print("""\n
+        The Bard moved you into his tent. He sat you down, 
         and poured you a cup of tea. He spoke to you, "I am Richter the 
         Ivory, I am famous around these lands, and search for talent 
         everywhere I go. I think you were someone special. The problem was 
@@ -134,19 +145,22 @@ def scene3(pick_value):
         this will be the start of something great." 
         """)
     time.sleep(2.5)
+    print("========END OF CHAPTER 1========")
     CharacterScene1()
 
 
 def CharacterScene1():
     time.sleep(2.5)
-    print("""\n"Before we begin to work together I must know more about you, 
+    print("""\n
+    "Before we begin to work together I must know more about you, 
     who you are, what your expertises is, stuff like that. Hopefully it wont 
     take that long. First I am going to ask you what your Name is. 
     """)
     time.sleep(2.5)
     input("Please Type in your Name: ")
     time.sleep(2.5)
-    print("""\nNow that we have your name, I need to know what class are 
+    print("""\n
+    Now that we have your name, I need to know what class are 
     you. A brute of a Warrior, wielding a sword and shield to slay your 
     enemies and protect your allies. Are you a Mage, studier of the arcane 
     and wielder of magic. You wield powerful spells to disintegrate those 
@@ -162,7 +176,8 @@ def CharacterScene1():
     ans = 'incorrect'
     while ans == 'incorrect':
         if c1.upper() == "WARRIOR":
-            print("""\n"I knew I pegged you as a warrior. Your muscle 
+            print("""\n
+            "I knew I pegged you as a warrior. Your muscle 
             definitely defines that. I know you must be a little under 
             trained with your aspects of the warrior life. But don't worry I 
             have a friend who can help with that. Go talk to Gorthug, 
@@ -171,7 +186,8 @@ def CharacterScene1():
             far." 
             """)
             time.sleep(2.5)
-            print("""\nYou left the tent and made your way to Gorthug. You 
+            print("""\n
+            You left the tent and made your way to Gorthug. You 
             approached him and saw that he was polishing his flute with a 
             black wax. He looked up at you, "Your the stranger, What can I 
             help you with Outsider?". You relay your interaction with 
@@ -187,7 +203,8 @@ def CharacterScene1():
             ans = 'correct'
             Class = "Warrior"
         elif c1.upper() == "MAGE":
-            print("""\n"Ahh, a mage. I am one myself. For many years I have 
+            print("""\n
+            "Ahh, a mage. I am one myself. For many years I have 
             studied the arts myself. I assume its been awhile since you 
             practiced the arts. Don't worry It shouldn't take long. Go ahead 
             and create a small ball of light within the palm of your hand." 
@@ -203,7 +220,8 @@ def CharacterScene1():
             ans = 'correct'
             Class = "Mage"
         elif c1.upper() == "RANGER":
-            print("""\n"Interesting. I have only ever meet a few rangers in 
+            print("""\n
+            "Interesting. I have only ever meet a few rangers in 
             my life. One of them is my life long friend. Go find him out. 
             He's North into the forest, hunting some boars for dinner." You 
             left tent after giving a goodbye to Ricter. You headed north 
@@ -212,7 +230,8 @@ def CharacterScene1():
             fly pass your face. 
             """)
             time.sleep(2.5)
-            print("""\n"One more step friend and you'll find the next arrow 
+            print("""\n
+            "One more step friend and you'll find the next arrow 
             in your crown." You relayed your information about meeting 
             Ricter to this mysterious man. "Oh, sorry about that then. Come 
             help me with finding this singular that was roaming around 
@@ -237,14 +256,16 @@ def CharacterScene1():
 
 
 def CharacterScene2(Class_value):
-    print("""\n\nYou awake from your dream, sweating profusely. Its been 5 
+    print("""\n
+    You awake from your dream, sweating profusely. Its been 5 
     years since your first encounter with Ricter and his merry gang 
     of musicians. 
     """)
     time.sleep(2.5)
     if Class_value == "Warrior":
         time.sleep(2.5)
-        print("""\nThe air of the planes hit your face. Its a chill 
+        print("""\n
+        The air of the planes hit your face. Its a chill 
         afternoon, the sun slowly setting in the distance. You have just 
         finished a training session with your companion Gorthug. He went to 
         go some supper and drinks for the both of you about an hour ago. You 
@@ -271,7 +292,8 @@ def CharacterScene2(Class_value):
         while ans == 'incorrect':
             if c1.upper() == "YES":
                 time.sleep(2.5)
-                print("""\nAlucard's eyes lit up with excitement. "Aw yes, 
+                print("""\n
+                Alucard's eyes lit up with excitement. "Aw yes, 
                 I knew you were a promising candidate. We have weapons and 
                 gold to help. I assume you are very diverse with most weapon 
                 types, we have a most powerful weapon for you. I call it the 
@@ -281,14 +303,15 @@ def CharacterScene2(Class_value):
                 and give your goodbyes to Gorthag. You gathered your 
                 belongings and headed on the road with this new found group. 
                 """)
-            ans = 'correct'
-            time.sleep(2.5)
-            print("=====================END OF CHAPTER 2=====================")
-            time.sleep(2.5)
-            WarriorScene()
-            if c1.upper() == "NO":
+                ans = 'correct'
                 time.sleep(2.5)
-                print("""\n "That is a shame. I would leave this place as 
+                print("===================END OF CHAPTER 2===================")
+                time.sleep(2.5)
+                WarriorScene()
+            elif c1.upper() == "NO":
+                time.sleep(2.5)
+                print("""\n
+                "That is a shame. I would leave this place as 
                 quickly as you could. Dangers await, they only attack at 
                 night. Trust my word." The man left with his group in a 
                 hurry, none turning to look back at you. 
@@ -312,9 +335,14 @@ def CharacterScene2(Class_value):
                 print(" ================== RESTARTING ======================")
                 time.sleep(2)
                 CharacterScene2("Warrior")
+            else:
+                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                c1 = input()
+
     elif Class_value == "Mage":
         time.sleep(2)
-        print("""\nYou are currently deep within a deep nordic ruins trying
+        print("""\n
+        You are currently deep within a deep nordic ruins trying
         to find something called the "Arkenstone". It is said that the stone
         is filled with magic and energy that can catapult the world into 
         the next age. You decided to go alone on this journey, knowing
@@ -333,7 +361,8 @@ def CharacterScene2(Class_value):
         while ans == 'incorrect':
             if c1.upper() == "EAST":
                 time.sleep(2.5)
-                print("""\nHeading down the East path, you are meet, with 
+                print("""\n
+                Heading down the East path, you are meet, with 
                 damp mildew that reaches your nose. But after walking down
                 this path for what seemed to be multiple hours, you are 
                 approached with a silver lake, with the faintest hint of
@@ -348,14 +377,15 @@ def CharacterScene2(Class_value):
                 it. But then bellows of roars fill the chamber. And a 
                 dragon, green reptilian skin meets your eyes. 
                 """)
-            ans = 'correct'
-            time.sleep(2.5)
-            print("=====================END OF CHAPTER 2=====================")
-            time.sleep(2.5)
-            MageScene()
-            if c1.upper() == "NORTH":
+                ans = 'correct'
                 time.sleep(2.5)
-                print("""\nYou head towards the light, and see that it was a 
+                print("==================END OF CHAPTER 2==================")
+                time.sleep(2.5)
+                MageScene()
+            elif c1.upper() == "NORTH":
+                time.sleep(2.5)
+                print("""\n
+                You head towards the light, and see that it was a 
                 campfire. You begin to search around, and find out that 
                 there was someone here not long ago. As you begin to put the 
                 pieces together. You feel a blade on your neck a voice falls 
@@ -372,9 +402,13 @@ def CharacterScene2(Class_value):
                 print(" ==================RESTARTING======================")
                 time.sleep(2)
                 CharacterScene2("Mage")
+            else:
+                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                c1 = input()
     elif Class_value == "Ranger":
         time.sleep(2)
-        print("""\nThe sea breeze hits your nose, and the distance sound of
+        print("""\n
+        The sea breeze hits your nose, and the distance sound of
         seagulls fall down on your ear. The boat your on begins to rock.
         Used to the sway, you avoid the sickness. You have been traveling
         with captain Hugo for some time with your friend Ulysses. As you scan
@@ -391,7 +425,8 @@ def CharacterScene2(Class_value):
         while ans == 'incorrect':
             if c1.upper() == "YES":
                 time.sleep(2.5)
-                print("""\n"Thank you. Captain has been very paranoid 
+                print("""\n
+                "Thank you. Captain has been very paranoid 
                 recently. Talks of mutiny are coming from the Revelry. The 
                 plank king is said to want the head of hugo. But hopefully 
                 these are rumours. Still you see anything strange tonight, 
@@ -425,14 +460,15 @@ def CharacterScene2(Class_value):
                 the crews, and begin to counter the forces of the plank 
                 king. 
                 """)
-            ans = 'correct'
-            time.sleep(2.5)
-            print("=====================END OF CHAPTER 2=====================")
-            time.sleep(2.5)
-            RangerScene()
-            if c1.upper() == "NO":
+                ans = 'correct'
                 time.sleep(2.5)
-                print("""\n"Well that is a shame. Ill find someone else. Its 
+                print("==================END OF CHAPTER 2==================")
+                time.sleep(2.5)
+                RangerScene()
+            elif c1.upper() == "NO":
+                time.sleep(2.5)
+                print("""\n
+                "Well that is a shame. Ill find someone else. Its 
                 getting a little late, why don't you get some rest. Were 
                 gonna need you tomorrow." 
 
@@ -453,17 +489,22 @@ def CharacterScene2(Class_value):
                 print(" ==================RESTARTING======================")
                 time.sleep(2)
                 CharacterScene2("Ranger")
+            else:
+                print("INCORRECT! Type your choice: Warrior, Mage, or Ranger?")
+                c1 = input()
 
 
 def WarriorScene():
     time.sleep(2.5)
-    print("""\nFor years, you and Alucard have been traveling the land 
+    print("""\n
+    For years, you and Alucard have been traveling the land 
     fighting the evil forces of Dracula. Recently you have made your way to 
     his castle, Ravenloft. Conjoined with the forces of Ritcher of Alucard, 
     you have pushed your way into his chambers. 
     """)
     time.sleep(2.5)
-    print("""\nHere you face down the man himself, Dracula. A everlasting 
+    print("""\n
+    Here you face down the man himself, Dracula. A everlasting 
     gloom fills the space around you. A calm look from dracula, stares down 
     upon you. It is only you within his chamber. He shows his hands, daggers 
     form within his hand. He charges at you. 
@@ -478,13 +519,15 @@ def WarriorScene():
     while ans == 'incorrect':
         if c1.upper() == "ATTACK":
             time.sleep(2.5)
-            print("""\nYou whip the morning star at Dracula. He defects the 
+            print("""\n
+            You whip the morning star at Dracula. He defects the 
             attack initially. But you pull down onto the whip allowing it to 
             strike Dracula within the chest. It seems to be fatal enough of 
             a blow, and he falls onto one knee. 
             """)
             time.sleep(2.5)
-            print("""\nYou approach him, his calm face look up at you. 
+            print("""\n
+            You approach him, his calm face look up at you. 
             "Finish your destiny. Along have you awaited this. I have tried 
             at every corner to stop you, but it seems the mistress of fate 
             is cruel in her own way. But before you end my life, promise my 
@@ -499,7 +542,8 @@ def WarriorScene():
             ans = 'incorrect'
             while ans == 'incorrect':
                 if c1.upper() == "KILL":
-                    print("""\nYou reel back the morning star whip and 
+                    print("""\n
+                    You reel back the morning star whip and 
                     attack Dracula, ending him with a final blow. You see 
                     his body started to disperse into this black mist, 
                     until Richter rusher up behind you, and using fire magic 
@@ -509,7 +553,8 @@ def WarriorScene():
                     do now." 
                     """)
                     time.sleep(2.5)
-                    print("""\nYears pass, and you have been labeled the hero 
+                    print("""\n
+                    Years pass, and you have been labeled the hero 
                     of the realm. Your deeds have landed you your own 
                     castle, and have started your own mercenary company. You 
                     and Gorthag continue to go onto adventures with each 
@@ -524,8 +569,9 @@ def WarriorScene():
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
                     scene1()
-                if c1.upper() == "SPARE":
-                    print("""\nYou find pity in the man’s last words to you. 
+                elif c1.upper() == "SPARE":
+                    print("""\n
+                    You find pity in the man’s last words to you. 
                     You reel back the morning star, but you slack the line. 
                     Dracula stares at you. “You are a honorable man, 
                     but I am one of the dead’s chosen. Killing me would have 
@@ -544,7 +590,8 @@ def WarriorScene():
                     their bodies, you are the victor. 
                     """)
                     time.sleep(2.5)
-                    print("""\nYears pass, and you have been the chosen 
+                    print("""\n
+                    Years pass, and you have been the chosen 
                     champion of Lord Dracula. You have lead hordes of evil 
                     to take over the world. You stand at the top, but below 
                     your lord. You life is now his, forever commanded to do 
@@ -559,9 +606,13 @@ def WarriorScene():
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
                     scene1()
+                else:
+                    print("INCORRECT! Type Kill or Spare!")
+                    c1 = input()
         elif c1.upper() == 'BLOCK':
             time.sleep(2.5)
-            print("""\nYou raise your silver crest blocking Dracula Attack. 
+            print("""\n
+            You raise your silver crest blocking Dracula Attack. 
             He reels back in and strikes again. But your defense is strong. 
             You leverage another block, and have a shot to strike him. You 
             take the shot and it impales him. At the same time, both Alucard 
@@ -575,7 +626,8 @@ def WarriorScene():
             help with my friend. But this is were we say our goodbyes.
             """)
             time.sleep(2.5)
-            print("""\nYears pass, and you have been labeled the hero of the 
+            print("""\n
+            Years pass, and you have been labeled the hero of the 
             realm. Your deeds have landed you your own castle, and have 
             started your own mercenary company. You and Gorthag continue to 
             go onto adventures with each other. You have saved the day.
@@ -599,7 +651,8 @@ def WarriorScene():
 
 def MageScene():
     time.sleep(2.5)
-    print("""\nThe Dragon looks down upon you, it chest bellowed up.
+    print("""\n
+    The Dragon looks down upon you, it chest bellowed up.
     "I AM ALAZATHOR, THE BREAKER OF CHAINS AND REDEEMER OF HUMANITY.
     You have stumbled upon this chamber, what does thou seek?
     Answer with honest truth, for if you refuse, I will meet
@@ -613,7 +666,8 @@ def MageScene():
     while ans == 'incorrect':
         if c1.upper() == "ANSWER":
             time.sleep(2.5)
-            print("""\n"Ahh, looking for the Arkenstone, a mighty artifact. 
+            print("""\n
+            "Ahh, looking for the Arkenstone, a mighty artifact. 
             Only once has it been wielded by a mortal like yourself. An old 
             dwarf king, he became made with power, and the source of his 
             corruption was the stone its self. My internal question, 
@@ -625,7 +679,8 @@ def MageScene():
             this world. A herald of pure chaos and death." 
             """)
             time.sleep(2.5)
-            print("""\n"So now the Question. A long time ago, a farmer 
+            print("""\n
+            "So now the Question. A long time ago, a farmer 
             worked hard to maintain a peaceful life for his family. He wasn't 
             rich, but that didn't matter to him. He had love and was loved by 
             those around him. But a king, made with power wanted his land. 
@@ -647,7 +702,8 @@ def MageScene():
             ans = 'incorrect'
             while ans == 'incorrect':
                 if c1.upper() == "YES":
-                    print("""\n"Ah, you truly understand the world. That 
+                    print("""\n
+                    "Ah, you truly understand the world. That 
                     ever action has a consequence. That no matter how lowly 
                     or mighty one is, that they will meet their fate with 
                     the force of justice. You have proved yourself to wield 
@@ -662,7 +718,8 @@ def MageScene():
                     of its secrets. 
                     """)
                     time.sleep(2.5)
-                    print("""\nYears pass, and you have launched the world 
+                    print("""\n
+                    Years pass, and you have launched the world 
                     to the next age. You have become supreme emperor of the 
                     lands, and have amassed countless citadels to promote 
                     peace and tranquility. Everyone is happy, and you have 
@@ -677,8 +734,9 @@ def MageScene():
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
                     scene1()
-                if c1.upper() == "NO":
-                    print("""\n"That saddens me. My your reign be ever 
+                elif c1.upper() == "NO":
+                    print("""\n
+                    "That saddens me. My your reign be ever 
                     short, and thou people be ever vigilant." 
 
                     Alazathor raises it right claw, and manifest this 
@@ -688,7 +746,8 @@ def MageScene():
                     of its secrets. 
                     """)
                     time.sleep(2.5)
-                    print("""\nYears passed, and you have become the supreme 
+                    print("""\n
+                    Years passed, and you have become the supreme 
                     tyrant of the lands. You have bent the knee, of anyone 
                     who has resisted your rule. becoming mad with power, 
                     those who were closet with you, have turned. Branding 
@@ -704,16 +763,21 @@ def MageScene():
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
                     scene1()
+                else:
+                    print("INCORRECT! Type Yes or No!")
+                    c1 = input()
         elif c1.upper() == 'REFUSE':
             time.sleep(2.5)
-            print("""\n"Interesting, I have not found a mortal to have gone 
+            print("""\n
+            "Interesting, I have not found a mortal to have gone 
             against my will. Justice is a fickle thing, I have long been 
             her champion for many millennia. You are free from her shackles i 
             sense. I will make you my champion, and together we will free 
             this world from Justice's prison. 
             """)
             time.sleep(2.5)
-            print("""\nAlazathor raises it right claw, and manifest this 
+            print("""\n
+            Alazathor raises it right claw, and manifest this 
             glowing ethereal stone, of blue and purple stars. He hands it to 
             you, and with a bright flash. The stone speaks to you.And your 
             able to learn all of its secrets. Alazathor takes you into his 
@@ -745,7 +809,8 @@ def MageScene():
 
 def RangerScene():
     time.sleep(2.5)
-    print("""\nPushing through the streets of the Reverly, your crew, 
+    print("""\n
+    Pushing through the streets of the Reverly, your crew, 
     combined with some smart tactics from you and Ulysses, are managing the 
     efforts from the Plank King. Defending your self, you made it to the 
     court room of the Plank King. He is already awaiting you, with his 
@@ -771,7 +836,8 @@ def RangerScene():
     while ans == 'incorrect':
         if c1.upper() == "REFUSE":
             time.sleep(2.5)
-            print("""\n"Thank you, I haven't used old betsy in forever. Your 
+            print("""\n
+            "Thank you, I haven't used old betsy in forever. Your 
             giving me a treat that ill savor for a thousand years." The 
             plank king stand up, and readies his blade. 
 
@@ -790,7 +856,8 @@ def RangerScene():
             ans = 'incorrect'
             while ans == 'incorrect':
                 if c1.upper() == "KILL":
-                    print("""\nYou end the Plank Kings life. With the help 
+                    print("""\n
+                    You end the Plank Kings life. With the help 
                     of Ulysses. The two of you together in the chamber 
                     share glances with each other. Until the rumbling at the 
                     door breaks through, Its your crew along with the forces 
@@ -805,7 +872,8 @@ def RangerScene():
                     You have become the new king of the Reverly.
                     """)
                     time.sleep(2.5)
-                    print("""\nFor years, you have usurped the rule of the 
+                    print("""\n
+                    For years, you have usurped the rule of the 
                     previous king. He ruled with chaos and anger. But you 
                     brought order and peace. People begin to follow you, 
                     not out of worry or fear; but now out of loyalty. 
@@ -824,8 +892,9 @@ def RangerScene():
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
                     scene1()
-                if c1.upper() == "SPARE":
-                    print("""You find pity in the man who once was king. You 
+                elif c1.upper() == "SPARE":
+                    print("""\n
+                    You find pity in the man who once was king. You 
                     take his crown. And proclaim yourself the new leader of 
                     the Reverly. With backings from those around you, 
                     you rise yourself to the top. People started to believe 
@@ -835,7 +904,8 @@ def RangerScene():
                     revenge against you. 
                     """)
                     time.sleep(2.5)
-                    print("""\nIts been years, but word has it that The 
+                    print("""\n
+                    Its been years, but word has it that The 
                     Plank king has escaped his prison. You worried, begin to 
                     fortify the Reverly. But The Plank King came back and he 
                     brought with him the eldritch power, of an ancient evil, 
@@ -858,9 +928,13 @@ def RangerScene():
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
                     scene1()
+                else:
+                    print("INCORRECT! Type Kill or Spare!")
+                    c1 = input()
         elif c1.upper() == "ACCEPT":
             time.sleep(2.5)
-            print("""\n"Well this is a surprise at least. Mighty well 
+            print("""\n
+            "Well this is a surprise at least. Mighty well 
             gentlemen, welcome to the crew of the Plank King. First Go and 
             stop your old mates from wrecking to much havoc. Im in need 
             urgently of your Assistance." 
@@ -872,7 +946,8 @@ def RangerScene():
             directly with the Plank King. 
             """)
             time.sleep(2.5)
-            print("""\nYears pass, and you help the Plank King see his 
+            print("""\n
+            Years pass, and you help the Plank King see his 
             errors in his ways. He begins to shape his ruler ship away from 
             Chaos, and begins to sow peace and harmony along the pirates and 
             thieves of the Reverly. 
