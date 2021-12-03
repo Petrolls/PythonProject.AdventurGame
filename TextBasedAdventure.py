@@ -1,6 +1,5 @@
 import time
 
-
 def scene1():
     print("""
     Welcome to my adventure game!
