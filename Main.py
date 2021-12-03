@@ -1,7 +1,7 @@
 __author = 'Ethan Franklin'
 import time
 
-def scene1():
+def main():
     print("""
     Welcome to my adventure game!
     I think we shall start and get into the action.
@@ -30,7 +30,7 @@ def scene1():
             print("====================YOU HAVE DIED=========================")
             print(" =================== RESTARTING ========================")
             time.sleep(2.5)
-            scene1()
+            main()
         elif c1.upper() == "LEAVE":
             print("""\n
             You leave the room desiring to rid your self of your 
@@ -568,7 +568,7 @@ def WarriorScene():
                     time.sleep(2.5)
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 elif c1.upper() == "SPARE":
                     print("""\n
                     You find pity in the man’s last words to you. 
@@ -605,7 +605,7 @@ def WarriorScene():
                     time.sleep(2.5)
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 else:
                     print("INCORRECT! Type Kill or Spare!")
                     c1 = input()
@@ -643,7 +643,7 @@ def WarriorScene():
             print(
                 "==================RESTARTING FROM THE START=================")
             time.sleep(2.5)
-            scene1()
+            main()
         else:
             print("Wrong Input! Enter Attack or Block: ")
             c1 = input()
@@ -733,7 +733,7 @@ def MageScene():
                     time.sleep(2.5)
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 elif c1.upper() == "NO":
                     print("""\n
                     "That saddens me. My your reign be ever 
@@ -762,7 +762,7 @@ def MageScene():
                     time.sleep(2.5)
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 else:
                     print("INCORRECT! Type Yes or No!")
                     c1 = input()
@@ -801,7 +801,7 @@ def MageScene():
             print(
                 "==================RESTARTING FROM THE START=================")
             time.sleep(2.5)
-            scene1()
+            main()
         else:
             print("Wrong Input! Enter Answer or Refuse: ")
             c1 = input()
@@ -891,7 +891,7 @@ def RangerScene():
                     time.sleep(2.5)
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 elif c1.upper() == "SPARE":
                     print("""\n
                     You find pity in the man who once was king. You 
@@ -927,7 +927,7 @@ def RangerScene():
                     time.sleep(2.5)
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 else:
                     print("INCORRECT! Type Kill or Spare!")
                     c1 = input()
@@ -967,12 +967,11 @@ def RangerScene():
             time.sleep(2.5)
             print("================RESTARTING FROM THE START===============")
             time.sleep(2.5)
-            scene1()
+            main()
         else:
             print("Wrong Input! Type in Accept or Refuse: ")
             c1 = input()
 
 
-scene1()
-print("\n\n")
-print("=========================END OF CHAPTER 1=========================")
+main()
+

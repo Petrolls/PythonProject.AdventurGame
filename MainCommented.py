@@ -2,7 +2,7 @@ __author = 'Ethan Franklin'
 import time
 #Im importing the time function to use as a way to delay messages.
 
-def scene1():
+def main():
 #We define the first scene
     print("""
     Welcome to my adventure game!
@@ -37,7 +37,7 @@ def scene1():
             print("====================YOU HAVE DIED=========================")
             print(" =================== RESTARTING ========================")
             time.sleep(2.5)
-            scene1()
+            main()
             #Now we load the first scene again, restarting it from the top, so we dont have to keep re-running the program.
         elif c1.upper() == "LEAVE":
         #If innput is any array of "LEAVE" it runs the statement
@@ -605,7 +605,7 @@ def WarriorScene():
                     time.sleep(2.5)
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 elif c1.upper() == "SPARE":
                     print("""\n
                     You find pity in the man’s last words to you. 
@@ -642,7 +642,7 @@ def WarriorScene():
                     time.sleep(2.5)
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                     #Now we reload the entire code, to allow for easier restarting of the program
                 else:
                     print("INCORRECT! Type Kill or Spare!")
@@ -682,7 +682,7 @@ def WarriorScene():
             print(
                 "==================RESTARTING FROM THE START=================")
             time.sleep(2.5)
-            scene1()
+            main()
             #Now we reload the entire code, to allow for easier restarting of the program
         else:
             print("Wrong Input! Enter Attack or Block: ")
@@ -773,7 +773,7 @@ def MageScene():
                     time.sleep(2.5)
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                     #Now we reload the entire code, to allow for easier restarting of the program
                 elif c1.upper() == "NO":
                     print("""\n
@@ -803,7 +803,7 @@ def MageScene():
                     time.sleep(2.5)
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 else:
                     print("INCORRECT! Type Yes or No!")
                     c1 = input()
@@ -843,7 +843,7 @@ def MageScene():
             print(
                 "==================RESTARTING FROM THE START=================")
             time.sleep(2.5)
-            scene1()
+            main()
         else:
             print("Wrong Input! Enter Answer or Refuse: ")
             c1 = input()
@@ -934,7 +934,7 @@ def RangerScene():
                     time.sleep(2.5)
                     print("===========RESTARTING FROM THE START=============")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                 elif c1.upper() == "SPARE":
                     print("""\n
                     You find pity in the man who once was king. You 
@@ -970,7 +970,7 @@ def RangerScene():
                     time.sleep(2.5)
                     print("======RESTARTING FROM THE START=======")
                     time.sleep(2.5)
-                    scene1()
+                    main()
                     #Now we reload the entire code, to allow for easier restarting of the program
                 else:
                     print("INCORRECT! Type Kill or Spare!")
@@ -1012,11 +1012,11 @@ def RangerScene():
             time.sleep(2.5)
             print("================RESTARTING FROM THE START===============")
             time.sleep(2.5)
-            scene1()
+            main()
         else:
             print("Wrong Input! Type in Accept or Refuse: ")
             c1 = input()
         #Here it will re run the while loop if anything other then Stay or Leave is typed.
 
-scene1()
+main()
 #We run the first scene wich will domino down into the ending.
