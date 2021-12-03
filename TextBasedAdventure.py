@@ -236,7 +236,7 @@ def CharacterScene1():
 
 def CharacterScene2(Class_value):
     print("""\n\nYou awake from your dream, sweating profusely. Its been 5 
-    years since you first started traveling with Ricter and his merry gang 
+    years since your first encounter with Ricter and his merry gang 
     of musicians. 
     """)
     time.sleep(2.5)
@@ -370,7 +370,74 @@ def CharacterScene2(Class_value):
                 CharacterScene2("Mage")
     elif Class_value == "Ranger":
         time.sleep(2)
-        print("This works for Ranger")
+        print("""\nThe seabreeze hits your nose, and the distance sound of
+        seagulls fall down on your ear. The boat your on begins to rock.
+        Used to the sway, you avoid the sickness. You have been traveling
+        with captin Hugo for some time with your friend Ulyesses. As you scan
+        around the top deck you see Ulyesses comes up from behind you.
+        "Hey, captain wants to know if youll stay guard tonight. Joseph,
+        got some scury and wont be able to stand up for some time. It'll
+        mean alot to him."
+
+        Do you take Joseph Night watch? (Type Yes or No)
+        """)
+        time.sleep(2.5)
+        c1 = input()
+        ans = 'incorrect'
+        while ans == 'incorrect':
+            if c1.upper() == "YES":
+                time.sleep(2.5)
+                print("""\n"Thank you. Captain has been very paranoid recently.
+                Talks of mutiny are coming from the Revelry. The plank king is said
+                to want the head of hugo. But hopefully these are rumours. Still
+                you see anything strange tonight, dont hesistate to act upon it."
+
+                You go ahead and situate yourself to oversee the boat tonight. You
+                are stationed within the Reverly, a "Capital" of sorts. Its a den of thieves
+                and pirates, but it has been home to you and ulyesses for some time.
+                The lord of the reverly, The Plank King; Is a scray individual. He has 
+                shown to have a stern and easy-to-provoke attituted. There has been talks 
+                of a mutiny against your captain, and rumours are the Plank king wants him
+                dead himself.
+
+                As your thoughts are combining in your head. You begin to look around. Closer
+                to midnight, you hear it first before you see it. But a group of 5 cloaked indiviudals
+                have been moving 3 barrles onto the ship deck. Then they light a match, but before they
+                are able to exploded the gunpowder barrels, you shoot their hands in quick retaliation.
+
+                They begin to run away, but not before they start to yell out loud. Lights come down deep from 
+                the reverly. Cannon shots, and a mob of pirates approach. The sound has awoken the crew that
+                you belong too. And ulyesses comes bering bad news, "Assassins killed Captain, tried to stop it.
+                Was too slow. But its true, this is the Plank King's doing. Im not leaving till he is dead."
+
+                Agreeing with your friend, the two of you gather the rest of the crews,
+                and begin to counter the forces of the plank king.
+                """)
+            ans = 'correct'
+            time.sleep(2.5)
+            print("=====================END OF CHAPTER 2=====================")
+            time.sleep(2.5)
+            RangerScene()
+            if c1.upper() == "NO":
+                time.sleep(2.5)
+                print("""\n"Well that is a shame. Ill find someone else. Its getting
+                a little late, why dont you get some rest. Were gonna need you tommorow."
+
+                You listen to your friends word, and get go and get some rest for the night.
+                Sleep comes easy to you. Its been sometime since you been on the boat, and your 
+                eyes begin to feel very. As your sleep takes you, you see a vision of a bright
+                light. Until minutes later you awaken to the sound of an explosion. And a flaming
+                bar of wood hits you. It ends up pinning you down, unable to move. You see the 
+                water level begin to rise, until it sucummbes you within it. You drift into the
+                void. Until your life leaves your body.
+                """)
+                ans = 'correct'
+                time.sleep(2)
+                print("====================YOU HAVE DIED====================")
+                time.sleep(2)
+                print(" ==================RESTARTING======================")
+                time.sleep(2)
+                CharacterScene2("Ranger")
 
 
 def WarriorScene():
@@ -638,6 +705,102 @@ def MageScene():
             print("Wrong Input! Enter Answer or Refuse: ")
             c1 = input()
 
+
+def RangerScene():
+    time.sleep(2.5)
+    print("""\nPushing through the streets of the Reverly, your crew, combined with some smart
+    tactics from you and ulyesses, are managing the efforts from the Plank King.
+    Defending your self, you made it to the court room of the Plank King. He is already
+    awaiting you, with his gnarly halberd in hand. 
+
+    "So, Hugo is dead I presume. I know you will not believe me, but Hugo was an evil
+    needed to be destroyed. Was going beneath my nose, and trying to usurpe me. I took 
+    him out. I have regrets, but I did what was needed to be done."
+
+    "You have impressed me though, along with your crew. I forgot this, take my offer.
+    Work under me, and Ill let you live, if you dont. Well, you'll wish you did.
+    So what is it? Be smart about this."
+
+    Ulyesses looks over at you, gives you a nod; without words he lets you know
+    he is on your side with whatever you choose.
+
+    So, what will it be? (Type in "Accept" or "Refuse") 
+    """)
+    c1 = input()
+    time.sleep(2.5)
+    ans = 'incorrect'
+    while ans == 'incorrect':
+        if c1.upper() == "REFUSE":
+            time.sleep(2.5)
+            print("""\n"Thank you, I havent used old betsy in forever. Your giving me a treat
+            that ill savor for a thousand years." The plank king stand up, and readies his blade.
+
+            He begins the attack against you two. It is a ruthless battle, all three of you 
+            suffer wounds from each attacks. But in the end, you and Ulyesses manage, to get
+            the Plank king down onto his kness. He looks up at the two of you.
+
+            "If you dont, Ill make sure 
+
+            """)
+            time.sleep(2.5)
+            print("""\n
+            """)
+            c1 = input()
+            time.sleep(2.5)
+            ans = 'incorrect'
+            while ans == 'incorrect':
+                if c1.upper() == "":
+                    print("""\n
+                    """)
+                    time.sleep(2.5)
+                    print("""\n
+                    """)
+                    ans = 'correct'
+                    time.sleep(2.5)
+                    print("=============YOU GOT THE GOOD ENDING==============")
+                    time.sleep(2.5)
+                    print("=============THANK YOU FOR PLAYING===============")
+                    time.sleep(2.5)
+                    print("===========RESTARTING FROM THE START=============")
+                    time.sleep(2.5)
+                    scene1()
+                if c1.upper() == "":
+                    print("""
+                    """)
+                    time.sleep(2.5)
+                    print("""
+                    """)
+                    ans = 'correct'
+                    time.sleep(2.5)
+                    print("========YOU GOT THE BAD ENDING========")
+                    time.sleep(2.5)
+                    print("========THANK YOU FOR PLAYING=========")
+                    time.sleep(2.5)
+                    print("======RESTARTING FROM THE START=======")
+                    time.sleep(2.5)
+                    scene1()
+        elif c1.upper() == "":
+            time.sleep(2.5)
+            print("""\n
+            """)
+            time.sleep(2.5)
+            print("""\n
+            """)
+            ans = 'correct'
+            time.sleep(2.5)
+            print(
+                "==================YOU GOT THE GOOD ENDING==================")
+            time.sleep(2.5)
+            print(
+                "====================THANK YOU FOR PLAYING===================")
+            time.sleep(2.5)
+            print(
+                "==================RESTARTING FROM THE START=================")
+            time.sleep(2.5)
+            scene1()
+        else:
+            print("Wrong Input! ")
+            c1 = input()
 
 scene1()
 print("\n\n")
