@@ -506,7 +506,7 @@ def WarriorScene():
     Here you face down the man himself, Dracula. A everlasting 
     gloom fills the space around you. A calm look from dracula, stares down 
     upon you. It is only you within his chamber. He shows his hands, daggers 
-    form within his hand. He charges at you. 
+    form within them. He charges at you. 
 
     You are equipped with a shield, and the morning star whip.
 
@@ -522,11 +522,11 @@ def WarriorScene():
             You whip the morning star at Dracula. He defects the 
             attack initially. But you pull down onto the whip allowing it to 
             strike Dracula within the chest. It seems to be fatal enough of 
-            a blow, and he falls onto one knee. 
+            a blow, as he falls onto one knee. 
             """)
             time.sleep(2.5)
             print("""\n
-            You approach him, his calm face look up at you. 
+            You approach him, his calm face looks up at you. 
             "Finish your destiny. Along have you awaited this. I have tried 
             at every corner to stop you, but it seems the mistress of fate 
             is cruel in her own way. But before you end my life, promise my 
@@ -544,8 +544,8 @@ def WarriorScene():
                     print("""\n
                     You reel back the morning star whip and 
                     attack Dracula, ending him with a final blow. You see 
-                    his body started to disperse into this black mist, 
-                    until Richter rusher up behind you, and using fire magic 
+                    his body start to disperse into this black mist, 
+                    until Richter rushes up behind you, and uses fire magic 
                     to completely destroy the soul of Dracula. 
 
                     You two share a glance and he ask you "So, what will you 
